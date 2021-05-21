@@ -39,18 +39,18 @@
       <script type="text/javascript">
 
       $("nav div").click(function() {
-            $("ul").slideToggle();
-            $("ul ul").css("display", "none");
+            $("nav ul").slideToggle();
+            $("nav ul ul").css("display", "none");
       });
 
-      $("ul li").click(function() {
-            $("ul ul").slideUp();
-            $(this).find('ul').slideToggle();
+      $("nav ul li").click(function() {
+            $("nav ul ul").slideUp();
+            $(this).find('nav ul').slideToggle();
       });
 
       $(window).resize(function() {
             if($(window).width() > 768) {
-                  $("ul").removeAttr('style');
+                  $("nav ul").removeAttr('style');
             }
       });
 
