@@ -39,13 +39,13 @@
       <script type="text/javascript">
 
       $("nav div").click(function() {
-            $("nav ul").slideToggle();
-            $("nav ul ul").css("display", "none");
+            $("ul").slideToggle();
+            $("ul ul").css("display", "none");
       });
 
-      $("nav ul li").click(function() {
-            $("nav ul ul").slideUp();
-            $(this).find('nav ul').slideToggle();
+      $("ul li").click(function() {
+            $("ul ul").slideUp();
+            $(this).find(' ul').slideToggle();
       });
 
       $(window).resize(function() {
