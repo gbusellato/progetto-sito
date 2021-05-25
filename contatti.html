@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +6,7 @@
       <title>Studio 74 srl</title>
       <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style_2.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -14,6 +14,7 @@
 	  <link rel="stylesheet" href="style_2.css">
 </head>
 <body>
+
       <nav>
             <div>
                   <i class="fa fa-bars"></i>
@@ -21,7 +22,7 @@
 
             <ul>
                   <img src="img/logo.png" alt="Logo"</img>
-                  <li><a href="index.html">Home</a></li>
+                  <li><a href="home.html">Home</a></li>
                   <li><a href="contatti.html">Contatti</a></li>
                   <li><a href="Dove_siamo.html">Dove siamo</a></li>
 				  <li><a href="Gallery.html">Gallery</a></li>
@@ -44,7 +45,7 @@
             $("ul ul").css("display", "none");
       });
 
-      $("ul.x li").click(function() {
+      $("ul li").click(function() {
             $("ul ul").slideUp();
             $(this).find('ul').slideToggle();
       });
@@ -56,30 +57,29 @@
       });
 
       </script>
-	  
-	  	<div>
-		<p>INDIRIZZI E-MAIL UTILI</p>
-		<ul class="contatti">
-		<li class="contatti">Informazioni: info@studio74.it</li>
-        <li class="contatti">Assistenza Prodotti: help@studio74.it</li>
-		<li class="contatti">Posta Certificata: postacertificata@pec.studio74.it</li>
-		</ul>
+
+	<div>
+		<p class="info">INDIRIZZI E-MAIL UTILI</p>
+		<dl>
+		<dt>➣ Informazioni: info@studio74.it</dt>
+        <dt>➣ Assistenza Prodotti: help@studio74.it</dt>
+		<dt>➣ Posta Certificata: postacertificata@pec.studio74.it</dt>
+		</dl>
     </div>
 	
 	<div>
-		<p>NUMERI UTILI</p>
-		<ul class="contatti">
-		<li class="contatti">Telefono: 0445 540523</li>
-		<li class="contatti">Cellulare - SMS - WhatsApp: 348 7913293</li>
-		</ul>
+		<p class="info">NUMERI UTILI</p>
+		<dl>
+		<dt>➣ Telefono: 0445 540523</dt>
+		<dt>➣ Cellulare - SMS - WhatsApp: 348 7913293</dt>
+		</dl>
 	</div>
 
 	<div>
 	<p>ORARIO APERTURA UFFICI:</p>
-		<ul class="contatti">
-		<li class="contatti">Dal Lunedì al Venerdì dalle 8.30 alle 13.00 e dalle 13.30 alle 17.00</li>
-		</ul>
+		<dl>
+		<dt>➣ Dal Lunedì al Venerdì dalle 8.30 alle 13.00 e dalle 13.30 alle 17.00</dt>
+		</dl>
 	</div>
-
 </body>
 </html>
