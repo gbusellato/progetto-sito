@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Studio 74 srl</title>
+      <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="menuscript.js"></script>
+	  <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+      <nav>
+            <div>
+                  <i class="fa fa-bars"></i>
+            </div>
+
+            <ul>
+                  <img src="img/logo.png" alt="Logo"</img>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="contatti.html">Contatti</a></li>
+                  <li><a href="Dove_siamo.html">Dove siamo</a></li>
+				  <li><a href="Gallery.html">Gallery</a></li>
+                  <li><a href="#">Servizi<i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                              <li><a href="#">EasyStudio - CANONE ANNUALE</a></li>
+                              <li><a href="#">EasyStudio a CONSUMO</a></li>
+                              <li><a href="#">Postazioni Aggiuntive</a></li>
+                              <li><a href="#">Lettore Smart Card</a></li>
+                              <li><a href="#">Modulistica CC</a></li>
+                        </ul>
+                  </li>
+            </ul>
+      </nav>
+
+      <script type="text/javascript">
+
+      $("nav div").click(function() {
+            $("ul").slideToggle();
+            $("ul ul").css("display", "none");
+      });
+
+      $("ul.x li").click(function() {
+            $("ul ul").slideUp();
+            $(this).find('ul').slideToggle();
+      });
+
+      $(window).resize(function() {
+            if($(window).width() > 768) {
+                  $("ul").removeAttr('style');
+            }
+      });
+
+      </script>
+	  
+<p>Interfaccia Principale di EasyStudio</p>
+<img src="img/1.jpg" alt="1">
+<p>Gestione Pratiche e Scadenze</p>
+<img src="img/2.jpg" alt="2">
+<p>Anagrafiche e Moduli</p>
+<img src="img/3.jpg" alt="3">
+<p>Flusso Operativo comune ai Moduli</p>
+<img src="img/4.jpg" alt="4">
+<p>Interfaccia comune ai Moduli Telematici</p>
+<img src="img/5.jpg" alt="5">
+<p>Nota / Stato dei Modelli Telematici</p>
+<img src="img/6.jpg" alt="6">
+
+
+</body>
+</html>
