@@ -24,7 +24,7 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="contatti.html">Contatti</a></li>
                   <li><a href="Dove_siamo.html">Dove siamo</a></li>
-				  <li><a href="Gallery.html">Gallery</a></li>
+				  <li><a href="gallery.html">Gallery</a></li>
                   <li><a href="#">Servizi<i class="fa fa-sort-desc"></i></a>
                         <ul>
                               <li><a href="#">EasyStudio - CANONE ANNUALE</a></li>
@@ -38,38 +38,50 @@
       </nav>
 
       <script type="text/javascript">
+		  $("nav div").click(function() {
+				$("ul").slideToggle();
+				$("ul ul").css("display", "none");
+		  });
 
-      $("nav div").click(function() {
-            $("ul").slideToggle();
-            $("ul ul").css("display", "none");
-      });
+		  $("ul.x li").click(function() {
+				$("ul ul").slideUp();
+				$(this).find('ul').slideToggle();
+		  });
 
-      $("ul.x li").click(function() {
-            $("ul ul").slideUp();
-            $(this).find('ul').slideToggle();
-      });
-
-      $(window).resize(function() {
-            if($(window).width() > 768) {
-                  $("ul").removeAttr('style');
-            }
-      });
-
+		  $(window).resize(function() {
+				if($(window).width() > 768) {
+					  $("ul").removeAttr('style');
+				}
+		  });
       </script>
-	  
-<p>Interfaccia Principale di EasyStudio</p>
-<img src="img/1.jpg" alt="1">
-<p>Gestione Pratiche e Scadenze</p>
-<img src="img/2.jpg" alt="2">
-<p>Anagrafiche e Moduli</p>
-<img src="img/3.jpg" alt="3">
-<p>Flusso Operativo comune ai Moduli</p>
-<img src="img/4.jpg" alt="4">
-<p>Interfaccia comune ai Moduli Telematici</p>
-<img src="img/5.jpg" alt="5">
-<p>Nota / Stato dei Modelli Telematici</p>
-<img src="img/6.jpg" alt="6">
-
+	<div>
+		<table>
+		<tr>
+			<th> Interfaccia Principale di EasyStudio </th>
+			<th> Gestione Pratiche e Scadenze </th>
+		</tr>
+		<tr>
+			<td> <img src="img/1.jpg" alt="1"> </td>
+			<td> <img src="img/2.jpg" alt="2"> </td>
+		</tr>
+		<tr>
+			<th> Anagrafiche e Moduli </th>
+			<th> Flusso Operativo comune ai Moduli </th>
+		</tr>
+		<tr>
+			<td> <img src="img/3.jpg" alt="3"> </td>
+			<td> <img src="img/4.jpg" alt="4"> </td>
+		</tr>
+		<tr>
+			<th> Interfaccia comune ai Moduli Telematici </th>
+			<th> Nota / Stato dei Modelli Telematici </th>
+		</tr>
+		<tr>
+			<td> <img src="img/5.jpg" alt="5"> </td>
+			<td> <img src="img/6.jpg" alt="6"> </td>
+		</tr>
+		</table>
+	</div>
 
 </body>
 </html>
