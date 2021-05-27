@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Studio 74 srl</title>
+      <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="menuscript.js"></script>
+	  <link rel="stylesheet" href="table.css">
+	  <link rel="stylesheet" href="style_2.css">
+</head>
+<body background-color="#e6ffff">
+
+		<nav>
+            <div>
+                  <i class="fa fa-bars"></i>
+            </div>
+
+            <ul>
+                  <img src="img/logo.png" alt="Logo"</img>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="contatti.html">Contatti</a></li>
+                  <li><a href="Dove_siamo.html">Dove siamo</a></li>
+				  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="#">Servizi<i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                              <li><a href="EasyStudio - CANONE ANNUALE.html">EasyStudio - CANONE ANNUALE</a></li>
+                              <li><a href="EasyStudio - A CONSUMO.html">EasyStudio A CONSUMO</a></li>
+                              <li><a href="EasyStudio - POSTAZIONI.html">Postazioni Aggiuntive</a></li>
+                              <li><a href="#">Lettore Smart Card</a></li>
+                              <li><a href="#">Modulistica CC</a></li>
+                        </ul>
+                  </li>
+            </ul>
+		</nav>
+
+		  <script type="text/javascript">
+
+		  $("nav div").click(function() {
+				$("ul").slideToggle();
+				$("ul ul").css("display", "none");
+		  });
+
+		  $("ul li").click(function() {
+				$("ul ul").slideUp();
+				$(this).find('ul').slideToggle();
+		  });
+
+		  $(window).resize(function() {
+				if($(window).width() > 768) {
+					  $("ul").removeAttr('style');
+				}
+		  });
+
+		  </script>
+	  
+		<table class="tabella">
+		<thead>
+		<tr>
+			<th>  </th>
+			<th>€</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Prima Postazione di Default </td>
+			<td> - </td></tr>
+		<tr>
+			<td>1 Postazione</td>
+			<td>30,00</td></tr>
+		<tr>
+		<tr>
+			<td>2 Postazioni</td>
+			<td>50,00</td></tr>
+		<tr>
+		<tr>
+			<td>5 Postazioni</td>
+			<td>100,00</td></tr>
+		<tr>
+		</tbody>
+	  
+
+</body>
+</html>
