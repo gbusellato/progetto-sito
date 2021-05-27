@@ -41,3 +41,9 @@ td.galleria
 	text-align:center;
 }
 
+div.iva
+{
+	font-family: 'Brush Script MT', cursive;
+	font-size: 18px;
+	color:red;
+}
