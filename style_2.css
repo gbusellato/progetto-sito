@@ -8,14 +8,36 @@ p.immagine
 	text-align:center;
 }
 
-p
+p.info
 {
 	font-family: 'Brush Script MT', cursive;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 body
 {
 	background-color:#e6ffff;
+}
+
+dt,p
+{
+	font-size:18px;
+}
+
+img.gallery
+{
+	width:60%;
+	height:auto;
+	float:center;
+}
+
+th.immmagine
+{
+	text-align:center;
+}
+
+td.galleria
+{
+	text-align:center;
 }
 
