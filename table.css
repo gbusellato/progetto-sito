@@ -1,0 +1,17 @@
+table.tabella {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.tabella td, table.tabella th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.tabella tbody td {
+  font-size: 13px;
+}
+
+table.tabella thead th {
+  font-size: 15px;
+  font-weight: bold;
+}
