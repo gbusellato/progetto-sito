@@ -13,6 +13,7 @@
       <script src="menuscript.js"></script>
 	  <link rel="stylesheet" href="style_2.css">
 	  <link rel="stylesheet" href="table.css">
+	  <script src="javascript.js"></script>
 </head>
 <body>
       <nav>
@@ -28,8 +29,8 @@
 				  <li><a href="gallery.html">Gallery</a></li>
                   <li><a href="#">Servizi<i class="fa fa-sort-desc"></i></a>
                         <ul>
-                              <li><a href="#">EasyStudio - CANONE ANNUALE</a></li>
-                              <li><a href="#">EasyStudio a CONSUMO</a></li>
+                              <li><a href="EasyStudio - CANONE ANNUALE.html">EasyStudio - CANONE ANNUALE</a></li>
+                              <li><a href="EasyStudio - A CONSUMO.html">EasyStudio A CONSUMO</a></li>
                               <li><a href="#">Postazioni Aggiuntive</a></li>
                               <li><a href="#">Lettore Smart Card</a></li>
                               <li><a href="#">Modulistica CC</a></li>
@@ -54,84 +55,70 @@
 					  $("ul").removeAttr('style');
 				}
 		  });
-      </script>
-	  <script>
-	  function totale() {
-var i;
-	for(i = 0; i < 12; i++){}
-	var y=1;
-	var z=0;
-	
-	if(var x = document.getElementById("y").checked==true)
-	{
-	     z+=document.getElementById("y").value;
-	}
-	
-     return document.getElementById("demo").innerHTML = z;
-	 
-  }
-</script>
-<form method="get" onsubmit="return totale()">
+		</script>
+		<form onsubmit="totale">
 	  <table class="tabella">
-<thead>
-<tr>
-<th>
-AGENZIA DELLE ENTRATE</th>
-<th>€</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><input type="checkbox" id="1" name="Adesione" value="50">Adesione ai Processi Verbali di Constatazione e all'invito al contraddittorio
-Erogazioni Liberali - Comunicazione da parte di soggetti erogatori di erogazioni liberali
-PEC Grandi Contribuenti - Comunicazione Telematica dell'Indirizzo di Posta Elettronica Certificata
-Dichiarazione dell'Imposta di Bollo Virtuale
-Mod. IPEA - Modello per l'Istanza di Computo in Diminuzione delle Perdite dai Maggiori Imponibili Derivanti dall'Attività di Accertamento</td><td>50,00</td></tr>
-<tr>
-<td><input type="checkbox" id="2" name="Deleghe" value="50">	Deleghe Cartacee Agenzia Entrate</td><td>50,00</td></tr>
-<tr>
-<td><input type="checkbox" id="3" name="Certificazione" value="50">	Certificazione Utili ed altri Proventi Equiparati corrisposti
-Certificazione Unica</td><td>50,00</td></tr>
-<tr>
-<td><input type="checkbox" id="4" name="Comunicazioni" value="50">	Comunicazioni Regimi TCT
-Mod. EAS
-Mod. IVA TR
-Mod. SSP
-Voluntary Disclosure</td><td>50,00</td></tr>
-<tr>
-<td><input type="checkbox" id="5" name="Dichiarazione" value="50">	Dichiarazione di Intento Telematica</td><td>50,00</td></tr>
-<tr>
-<td><input type="checkbox" id="6" name="Modelli IVA" value="50">Modelli IVA (AA7 - AA9 - AA4 - AA5 - ANR - Richiesta di Certificato di Partita IVA - Tenuta Scritture Contabili)</td><td>50,00</td></tr>
-<tr>
-<td><input type="checkbox" id="7" name="REGISTRAZIONI" value="50">	REGISTRAZIONI:
-Mod. 1 - Denuncia di Contratto Verbale
-Mod. M69
-Mod.69 Tedesco
-Mod. RR A/8
-Mod. RR A/8 Tedesco
-Cessione Fabbricato
-Locazione di Immobile Storico</td><td>50,00</td></tr>
-<tr>
-<td><input type="checkbox" id="8" name="Mod. F23" value="25">	Mod. F23 - Modelli di Pagamento: tasse, imposte, sanzioni e altre entrate
-Mod. F23 in Lingua Tedesca
-Mod. F23 in Lingua Slovena
-F23 Istanza di Correzione
-Richiesta di Rimborso delle Imposte di Registro/Ipotecarie/Catastali</td><td>25,00</td></tr>
-<tr>
-<td><input type="checkbox" id="9" name="Modelli F24" value="25">Modelli F24</td><td>25,00</td></tr>
-<tr>
-<td><input type="checkbox" id="10" name="730" value="99">Spese Sanitarie per 730 precompilato</td><td>99,00</td></tr>
-<tr>
-<td><input type="checkbox" id="11" name="Comunicazioni" value="75">	Comunicazioni per la Dichiarazione dei Redditi Precompilata: Comunicazioni per la Dichiarazione dei Redditi Precompilata: Spese Funebri, Spese Ristrutturazione Edilizia, Spese Asili Nido, Spese Universitarie, Opposizione Spese Sanitarie, Spese Scolastiche </td><td>75,00</td></tr>
-<tr>
-<td><input type="checkbox" id="12" name="Comunicazioni" value="200">
-	Comunicazioni Contratti Utenze Elettriche, Gas, Idriche e Telefoniche</td><td>200,00</td></tr>
-</tbody>
-</tr>
-</table>
-<input type="submit" value="Submit">
-<p id="demo"</p>
-</form>
+	<thead>
+	<tr>
+	<th>
+	AGENZIA DELLE ENTRATE</th>
+	<th>€</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td><input type="checkbox" id="1" name="Adesione" value="50">Adesione ai Processi Verbali di Constatazione e all'invito al contraddittorio
+	Erogazioni Liberali - Comunicazione da parte di soggetti erogatori di erogazioni liberali
+	PEC Grandi Contribuenti - Comunicazione Telematica dell'Indirizzo di Posta Elettronica Certificata
+	Dichiarazione dell'Imposta di Bollo Virtuale
+	Mod. IPEA - Modello per l'Istanza di Computo in Diminuzione delle Perdite dai Maggiori Imponibili Derivanti dall'Attività di Accertamento</td><td>50,00</td></tr>
+	<tr>
+	<td><input type="checkbox" id="2" name="Deleghe" value="50">	Deleghe Cartacee Agenzia Entrate</td><td>50,00</td></tr>
+	<tr>
+	<td><input type="checkbox" id="3" name="Certificazione" value="50">	Certificazione Utili ed altri Proventi Equiparati corrisposti
+	Certificazione Unica</td><td>50,00</td></tr>
+	<tr>
+	<td><input type="checkbox" id="4" name="Comunicazioni" value="50">	Comunicazioni Regimi TCT
+	Mod. EAS
+	Mod. IVA TR
+	Mod. SSP
+	Voluntary Disclosure</td><td>50,00</td></tr>
+	<tr>
+	<td><input type="checkbox" id="5" name="Dichiarazione" value="50">	Dichiarazione di Intento Telematica</td><td>50,00</td></tr>
+	<tr>
+	<td><input type="checkbox" id="6" name="Modelli IVA" value="50">Modelli IVA (AA7 - AA9 - AA4 - AA5 - ANR - Richiesta di Certificato di Partita IVA - Tenuta Scritture Contabili)</td><td>50,00</td></tr>
+	<tr>
+	<td><input type="checkbox" id="7" name="REGISTRAZIONI" value="50">	REGISTRAZIONI:
+	Mod. 1 - Denuncia di Contratto Verbale
+	Mod. M69
+	Mod.69 Tedesco
+	Mod. RR A/8
+	Mod. RR A/8 Tedesco
+	Cessione Fabbricato
+	Locazione di Immobile Storico</td><td>50,00</td></tr>
+	<tr>
+	<td><input type="checkbox" id="8" name="Mod. F23" value="25">	Mod. F23 - Modelli di Pagamento: tasse, imposte, sanzioni e altre entrate
+	Mod. F23 in Lingua Tedesca
+	Mod. F23 in Lingua Slovena
+	F23 Istanza di Correzione
+	Richiesta di Rimborso delle Imposte di Registro/Ipotecarie/Catastali</td><td>25,00</td></tr>
+	<tr>
+	<td><input type="checkbox" id="9" name="Modelli F24" value="25">Modelli F24</td><td>25,00</td></tr>
+	<tr>
+	<td><input type="checkbox" id="10" name="730" value="99">Spese Sanitarie per 730 precompilato</td><td>99,00</td></tr>
+	<tr>
+	<td><input type="checkbox" id="11" name="Comunicazioni" value="75">	Comunicazioni per la Dichiarazione dei Redditi Precompilata: Comunicazioni per la Dichiarazione dei Redditi Precompilata: Spese Funebri, Spese Ristrutturazione Edilizia, Spese Asili Nido, Spese Universitarie, Opposizione Spese Sanitarie, Spese Scolastiche </td><td>75,00</td></tr>
+	<tr>
+	<td><input type="checkbox" id="12" name="Comunicazioni" value="200">
+		Comunicazioni Contratti Utenze Elettriche, Gas, Idriche e Telefoniche</td><td>200,00</td></tr>
+	</tbody>
+	</tr>
+	</table>
+	<input type="submit" value="Calcola Preventivo">
+	</form>
+	<div> Il tuo preventivo è di: 
+	<p id="demo"></p></div>
+
 <script>
 
 </body>
